@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">tugas3</string>
+    <string name="ponsel">هَاتِفٌ مَحْمُوْلٌ</string>
+    <string name="oppo_a5s">Oppo a5s:</string>
+    <string name="acer_aspire_e14">Acer Aspire E14:</string>
+    <string name="macbook_pro_m3">Macbook Pro M3:</string>
+    <string name="pesan">الطلب</string>
+    <string name="membership">العضوية:</string>
+    <string name="biasa">عادي</string>
+    <string name="silver">الفضة</string>
+    <string name="gold">الذهب</string>
+</resources>

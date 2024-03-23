@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16sp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Ponsel"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvJenis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oppo a5s:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilKayu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Oppo a5s">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etKayu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/baseline_5k_24"
+            android:inputType="number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvJenis2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acer Aspire E14:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilEbony"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Acer Aspire E14">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEbony"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/baseline_14mp_24"
+            android:inputType="number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvJenis3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Macbook Pro M3:"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilJati"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Macbook Pro M3">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etJati"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/baseline_3mp_24"
+            android:inputType="number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+        <TextView
+            android:id="@+id/tvMember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/membership"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rbPerunggu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="checkButton"
+            android:text="@string/biasa"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rbPerak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkButton"
+            android:text="@string/silver"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/rbEmas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkButton"
+            android:text="@string/gold"
+            android:textStyle="bold" />
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/btPesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="37dp"
+        android:text="Pesan" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnChangeLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arab"
+            android:layout_marginTop="1dp" />
+
+        <Button
+            android:id="@+id/btnChangeLanguageen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inggris"
+            android:layout_marginTop="1dp" />
+
+        <Button
+            android:id="@+id/btnChangeLanguageru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rusia"
+            android:layout_marginTop="1dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvPesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="1dp"
+        android:text="@string/pesan"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
